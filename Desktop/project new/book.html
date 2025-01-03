@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Parking Rental Service</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+    <header>
+        <h1>Car Parking Rental Service</h1>
+    </header>
+    <main>
+        <div class="search-container">
+            <input type="text" id="location" placeholder="Enter location..." oninput="getParkingLocation(this.value)"/>
+<input type="number" id="hours" placeholder="Number of hours" min="1" />
+<button id="searchButton" onclick="searchParking()">Search</button>
+        </div>
+        <div id="results"></div>
+    </main>
+
+        
+
+    <script src="script.js"></script>
+</body>
+</html>

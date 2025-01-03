@@ -1,0 +1,26 @@
+body{
+  background-image: url(low.jpg);  
+  background-repeat:no-repeat; 
+  background-size: cover;
+  filter: saturate(20%);
+  
+  
+
+}
+    
+.lo{
+    color: white;
+    position: relative;
+    left: 40%;
+    top: 15rem;
+   
+  
+}
+
+.sub{
+  color: blue;
+  
+}
+nav a:active{
+  color: greenyellow;
+}

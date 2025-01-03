@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parking Owner Registration</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(rolando-garrido-0tj-eYyCEFU-unsplash.jpg);
+            
+        }
+        .container {
+            width: 50%;
+            margin: 40px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+            z-index: 10;
+            background-color: ffffff;
+            color: white;
+            
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            height: 40px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button[type="submit"] {
+            width: 100%;
+            height: 40px;
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button[type="submit"]:hover {
+            background-color: #156518;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Parking Owner Registration</h2>
+        <form method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="place">Place:</label>
+            <input type="text" id="place" name="place" required>
+
+            <label for="space">Space:</label>
+            <input type="number" id="space" name="ADDRESS" required>
+
+            <label for="landlord_name">Landlord Name:</label>
+            <input type="text" id="landlord_name" name="landlord_name" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
+```

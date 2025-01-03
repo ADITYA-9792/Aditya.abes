@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>customer support</title>
+    <style>
+        body {
+            background-image: url(live.jpg);
+            opacity: 0.9;}
+        .faq{
+            position: relative;
+            left: 50px
+        }
+    </style>
+
+</head>
+<body>
+    
+</body>
+</html>
+<div class="support-page">
+  <h1>Customer Support</h1>
+  <p>Thank you for choosing our online car parking booking service. We're here to help with any questions or concerns you may have.</p>
+  <h2>Frequently Asked Questions</h2>
+  <ul class="faq">
+    <li>
+      <h3>How do I book a parking spot?</h3>
+      <p>To book a parking spot, simply click on the "Book Now" button, select your desired parking location and time, and follow the prompts to complete your booking.</p>
+    </li>
+    <li>
+      <h3>What forms of payment do you accept?</h3>
+      <p>We accept all major credit cards, including Visa, Mastercard, and American Express.</p>
+    </li>
+    <li>
+      <h3>Can I cancel or modify my booking?</h3>
+      <p>Please contact our customer support team at least 24 hours prior to your booking time to request any changes or cancellations.</p>
+    </li>
+  </ul>
+  <h2>Contact Us</h2>
+  <p>If you have any further questions or concerns, please don't hesitate to contact us:</p>
+  <ul>
+    <li>Email: <a href="mailto:support@carparking.com">support@carparking.com</a></li>
+    <li>Phone: 1-800-PARKING (1-800-727-5464)</li>
+    <li id="live-chat">
+      Live Chat: 
+      <button id="live-chat-button" onclick="openLiveChat()">Start Chat</button>
+      <div id="live-chat-box" style="display: none;">
+        <input id="live-chat-input" type="text" placeholder="Type your message...">
+        <button id="live-chat-send" onclick="sendLiveChatMessage()">Send</button>
+        <div id="live-chat-messages"></div>
+      </div>
+    </li>
+  </ul>
+  <h2>Helpful Resources</h2>
+  <ul>
+    <li><a href="/terms-and-conditions">Terms and Conditions</a></li>
+    <li><a href="/privacy-policy">Privacy Policy</a></li>
+    <li><a href="/faq">FAQs</a></li>
+  </ul>
+</div>
+
+<style>
+  .support-page {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .support-page h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .support-page ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .support-page li {
+    margin-bottom: 20px;
+  }
+
+  .support-page h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .support-page p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  #live-chat-button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #live-chat-button:hover {
+    background-color: #3e8e41;
+  }
+
+  #live-chat-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  #live-chat-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+  }
+
+  #live-chat-send {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #live-chat-send:hover {
+    background-color: #3e8e41;
+  }
+
+  #live-chat-messages {
+    padding: 20px;
+  }
+</style>
+
+<script>
+  function openLiveChat() {
+    document.getElementById("live-chat-box").style.display = "block";
+  }
+
+  function sendLiveChatMessage() {
+    var message = document.getElementById("live-chat-input").value;
+    if (message !== "") {
+      var messages = document.getElementById("live-chat-messages");
+      var newMessage = document.createElement("p");
+      newMessage.textContent = message;
+      messages.appendChild(newMessage);
+      document.getElementById("live-chat-input").value = "";
+    }
+  }
+</script>
